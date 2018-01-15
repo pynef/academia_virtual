@@ -1,0 +1,11 @@
+syntax: glob
+
+__pycache__/
+.env
+*.pyc
+*.sqlite3
+*.gz
+*.rar
+*.zip
+staticfiles/*
+media/*

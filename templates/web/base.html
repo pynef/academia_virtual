@@ -1,0 +1,231 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>UMACHAY | Academia de estudios web.</title>
+		<!-- StyleSheets -->
+		<link href="{% static 'web/css/bootstrap.css' %}" rel="stylesheet">
+		<link href="{% static 'web/css/icomoon.css' %}" rel="stylesheet">
+		<link href="{% static 'web/css/animate.css' %}" rel="stylesheet">
+		<link href="{% static 'web/css/css.css' %}" rel="stylesheet">
+		<link href="{% static 'web/css/main.css' %}" rel="stylesheet">
+		<link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+		<link href="{% static 'web/css/responsive.css' %}" rel="stylesheet">
+		<link href="{% static 'web/css/transition.css' %}" rel="stylesheet">
+		<!-- JavaScripts -->
+		<script src="{% static 'web/scripts/modernizr.js' %}"></script>
+	</head>
+	<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper push">
+
+		<header id="header" class="header">
+
+			<div class="top-bar">
+				<div class="container">
+
+					<div class="announcements">
+						<p>
+							<span></span>
+						</p>
+					</div>
+					<div class="topbar-address">
+						<p><span>los numero</span>+064 226655, info@umachay.com</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="nav-holder">
+					<div class="container">
+							<div class="p-relative has-layout">
+
+								<div class="logo">
+									<a href="/"><img style="width:235px;heigth:62px;" src="{% static 'web/images/logo.jpg' %}" alt=""></a>
+								</div>
+
+								<nav class="navigation">
+									<a class="toggleMenu" href="#menu"><i class="icon-navicon"></i></a>
+									<ul class="nav-list">
+										<li>
+											<a class="color-1" href="#index">Inicio</a>
+										</li>
+										<li>
+											<a class="color-3" href="#classes">Clases</a>
+										</li>
+										<li class="active">
+											<a class="color-4" href="#blog">Blog</a>
+										</li>
+										<li>
+											<a class="color-5" href="#teams">Docentes</a>
+										</li>
+										<li>
+											<a class="color-2" href="#">Preguntas</a>
+										</li>
+										<li>
+											<a class="color-7" href="#contact">Nosotros</a>
+										</li>
+									</ul>
+								</nav>
+
+								<div class="search-bar">
+									<div class="form-group">
+										<input type="search" class="form-control" name="search" placeholder="Enter any Keyword">
+										<i class="icon-search"></i>
+									</div>
+									<a class="tc-btn" href="#">Search</a>
+									<span class="search-lable"><i class="icon-search"></i></span>
+								</div>
+
+								<span id="search-open-btn" class="search-btn"><i class="icon-search"></i></span>
+
+							</div>
+					</div>
+			</div>
+
+		</header>
+		{% block slider %}
+		{% endblock slider %}
+		<!-- Main -->
+		<main id="main">
+      {% block main %}
+      {% endblock main %}
+    <div>
+		<!-- Main -->
+
+		<footer id="footer" class="footer has-layout">
+			<div class="footer-bg">
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-lg-4 col-md-4 col-xs-6 r-full-width">
+							<div class="footer-widget">
+								<h4>Ubicación</h4>
+								<div id="map-1" class="contact-map"></div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-xs-6 r-full-width">
+							<div class="footer-widget">
+								<h4>Contactenos</h4>
+								<ul class="address-list">
+									<li>
+										<div><i class="icon-facebook"></i>Umachay Academia<br> Contactenos,<br> MS(Whatsapp) 39232</div>
+									</li>
+									<li>
+										<div><i class="icon-phone"></i>Telefono: (051) 941 988 805</div>
+									</li>
+									<li>
+										<div><i class="icon-mobile"></i>Celular: +051 941 988 805</div>
+									</li>
+									<li>
+										<div><i class="icon-envelope-o"></i>Correo: info@umachay.com</div>
+									</li>
+									<li>
+										<div><i class="icon-clock"></i>Horario:<br>Lunes a Viernes 08:30AM - 09:30PM<br>Sabados 08:30AM - 09:30PM</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="col-sm-4 hidden-sm hidden-xs">
+							<div class="footer-widget">
+								<h4>Enlaces</h4>
+								<div class="quick-links-holder">
+									<div class="quick-links mb-50">
+										<h5>INFORMACIÓN</h5>
+										<ul>
+											<li><a href="#">Nosotros</a></li>
+											<li><a href="#">Guía rapida</a></li>
+											<li><a href="#">Politicas de privacidad</a></li>
+											<li><a href="#">Terminos de condiciones</a></li>
+										</ul>
+									</div>
+									<div class="quick-links">
+										<h5>SIGUENOS EN</h5>
+										<ul>
+											<li><a href="#">Facebook</a></li>
+											<li><a href="#">Twitter</a></li>
+											<li><a href="#">Linkedin</a></li>
+											<li><a href="#">Google Plus</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sub-footer">
+						<div class="tc-social-icons">
+							<ul>
+								<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+								<li><a class="twitter" href="#"><i class="icon-twitter"></i></a></li>
+								<li><a class="google-plus" href="#"><i class="icon-google-plus"></i></a></li>
+								<li><a class="facebook" href="#"><i class="icon-facebook"></i></a></li>
+							</ul>
+						</div>
+						<p>Copyright 2017 | All Right Reserved | By <a href="#">UMACHAY</a></p>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+	<nav id="menu" class="slide-menu">
+	    <a class="slide-logos" href="/"><img src="{% static 'web/images/logo.jpg' %}" alt=""></a>
+			<ul class="">
+				<li>
+					<a class="color-1" href="/">Inicio</a>
+				</li>
+				<li>
+					<a class="color-3" href="classes.html">Clases</a>
+				</li>
+				<li class="active">
+					<a class="color-4" href="blog.html">Blog</a>
+				</li>
+				<li>
+					<a class="color-5" href="teams.html">Docentes</a>
+				</li>
+				<li>
+					<a class="color-2" href="#">Preguntas</a>
+				</li>
+				<li>
+					<a class="color-7" href="contact.html">Nosotros</a>
+				</li>
+			</ul>
+	</nav>
+
+	<span id="scrollup" class="scrollup"><img src="{% static 'web/images/top.png' %}" alt=""></span>
+
+	<!-- Java Script -->
+	<script src="{% static 'web/scripts/jquery.js' %}"></script>
+	<script src="{% static 'web/scripts/bootstrap.js' %}"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="{% static 'web/scripts/gmap3.min.js' %}"></script>
+	<script src="{% static 'web/scripts/sliderPro.js' %}"></script>
+	<script src="{% static 'web/scripts/bigSlide.js' %}"></script>
+	<script src="{% static 'web/scripts/slick.js' %}"></script>
+	<script src="{% static 'web/scripts/parallax.js' %}"></script>
+	<script src="{% static 'web/scripts/countdown.js' %}"></script>
+	<script src="{% static 'web/scripts/countTo.js' %}"></script>
+	<script src="{% static 'web/scripts/spinner.js' %}"></script>
+	<script src="{% static 'web/scripts/bootstrap-select.js' %}"></script>
+	<script src="{% static 'web/scripts/star-rating.js' %}"></script>
+	<script src="{% static 'web/scripts/appear.js' %}"></script>
+	<script src="{% static 'web/scripts/prettyPhoto.js' %}"></script>
+	<script src="{% static 'web/scripts/isotope.pkgd.js' %}"></script>
+	<script src="{% static 'web/scripts/wow-min.js' %}"></script>
+	<!-- Put all Functions in functions.js -->
+	<script src="{% static 'web/scripts/functions.js' %}"></script>
+	</body>
+</html>
